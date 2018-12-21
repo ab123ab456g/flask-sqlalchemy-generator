@@ -1,0 +1,1 @@
+from .. import flask_sqlalchemy_generator

@@ -1,4 +1,4 @@
-class Datatype:
+class DataType:
     dataType_Usually = ['Boolean', 'Integer', 'String' ]
     dataType_NonUsaul = ['Integer', 'Array', 'BIGINT',
         'BigINterger','BLOG', 'Boolean', 'BOOLEAN',
@@ -11,7 +11,7 @@ class Datatype:
         'REAL', 'SchemaType', 'SMALLINT', 'SmallInterger',
         'String', 'TEXT', 'Text', 'Time', 'TIMESTAMP', 'TypeDecorator',
         'TypeEngine', 'Unicode', 'UnicodeText' , 'UserDefinedType',
-        'VARBINARY', 'VARCHAR']
+        'VARBINARY','VARCHAR']
 
 
 class Patameter(object):
