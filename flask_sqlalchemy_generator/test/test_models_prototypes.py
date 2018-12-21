@@ -1,9 +1,8 @@
 import unittest
-from ..models_prototypes import  DataType
-
-DataType = DataType()
+from ..models_prototypes import  DataType, Parameter
 
 class TestDataType(unittest.TestCase):
+	DataType = DataType()
 	def test_dataType_Usually(self):
 		test_dataType_Usually = ['Boolean', 'Integer', 'String' ]
 		self.assertEqual(DataType.dataType_Usually, test_dataType_Usually)
@@ -22,6 +21,18 @@ class TestDataType(unittest.TestCase):
         'TypeEngine', 'Unicode', 'UnicodeText' , 'UserDefinedType',
         'VARBINARY','VARCHAR']
 		self.assertEqual(DataType.dataType_NonUsaul, test_dataType_NonUsaul)
+
+
+class TestParamter(unittest.TestCase):
+	Parameter = Parameter()
+	def test__init__(self):
+		self.assertEqual(Parameter.ParameterName, '')
+		self.assertEqual(Parameter.DataType, '')
+		self.assertEqual(Parameter.NotNull, True)
+		self.assertEqual(Parameter.CheckCondition, '')
+		self.assertEqual(Parameter.PrimaryKey, True)
+		self.assertEqual(Parameter.ForiegnKey, '')
+
 
 
 if __name__ == '__main__':

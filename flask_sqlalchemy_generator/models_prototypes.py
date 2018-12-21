@@ -14,7 +14,7 @@ class DataType:
         'VARBINARY','VARCHAR']
 
 
-class Patameter(object):
+class Parameter(object):
     def __init__(self):
         self.ParameterName = ''
         self.DataType = ''
